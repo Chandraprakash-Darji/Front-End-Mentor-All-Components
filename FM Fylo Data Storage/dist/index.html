@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABO1BMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////l9Pff8fS54ein2eOn2eL9/v684unr9vj7/f7c8PSl2eKHzNil2OLv+Prz+vue1eB3xdOq2uPm9Pf29/vy8/n3/Py13+eEyteZ097P6u/2+/zByeKOm8r8/f7u+Pq+4+qOz9uU0dzo9fjb4O5meLbh5fH0+vvV7fHx+fv8/P2Gk8Wbps+44eim2eLW2+xkdrXO1Oit3OWttthperja3u7u+Pn6+/2hrNJneLfFy+P7+/23v92IlcbN0ufx8/nj5/Kbp9BsfbltfrqAj8ORnsvg5PD+/v/v8ffQ1em0vduqtNfn6vS/61TcAAAAHHRSTlMAAAQqbK3Z8v0DN5ff+xqJ6jbC/kHBAjjp3qz8qSKHsgAAAAFiS0dEAf8CLd4AAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfiChMPAx5FOtlkAAABSUlEQVQ4y4WTZ2OCMBCGc4IMEXAPjB10771t7dLuXbv3/v+/oNigIYjN+4HcJU9CcgMhVxASxLAkK4oshUUhBIgVqBEtqmNXelSLqF4EwDBjmFHMNADoejyRxD4lE/EGAZCScICkFCGc/YHrDkHOACON2yhtOABkTNxWZgYQZHPeqWKH18tlAakas6ezi3E1FQl5Fuhm3LyARD0AsIs9vSSmIrJwC9DXPzA4NEx8C0ktwMjo2PiE3YgFkokxOdUEpmdm5+YXXEBGCjEWl5bpHVZKq2tlMq+gAjHWNza9r9jarpD5QuMX1Z3dv3Fvn72T3LzkweFRfSgd+xJGn3lyeuZ8K+csYNFAXVzWrqr+bDmBoqG+vqnd3t3bDOCE2push8en55fXNzZZTLrfPz6/vn+oX083t2C4JccvWm7Z8xuH33r85v2v/X8Bp/FiyVLnL/0AAAAldEVYdGRhdGU6Y3JlYXRlADIwMTgtMTAtMTlUMTU6MDM6MzArMDI6MDCzEaEaAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE4LTEwLTE5VDE1OjAzOjMwKzAyOjAwwkwZpgAAAFd6VFh0UmF3IHByb2ZpbGUgdHlwZSBpcHRjAAB4nOPyDAhxVigoyk/LzEnlUgADIwsuYwsTIxNLkxQDEyBEgDTDZAMjs1Qgy9jUyMTMxBzEB8uASKBKLgDqFxF08kI1lQAAAABJRU5ErkJggg=="
+    />
+
+    <title>Frontend Mentor | Fylo data storage component</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/index.8253f660.css" />
+  </head>
+  <body
+    class="relative flex flex-col justify-center items-center h-screen bg-FmVeryDarkBlue text-FmPaleBlue bg-[url(./assets/bg-mobile.png)] md:bg-[url(./assets/bg-desktop.png)] bg-cover bg-no-repeat font-FmRaleway"
+  >
+    <main
+      class="w-full max-w-xs md:max-w-none flex flex-col gap-3 md:flex-row justify-center items-center"
+    >
+      <div
+        class="bg-FmDarkBlue rounded-tr-[8rem] rounded-2xl pt-10 p-5 px-8 w-full md:max-w-xs"
+      >
+        <img src="./assets/logo.b02a97a8.svg" alt="Main logo" />
+        <div class="flex gap-4 justify-start items-center py-6">
+          <div class="icon-wrapper">
+            <img
+              src="./assets/icon-document.a44de58e.svg"
+              alt="icon-document"
+            />
+          </div>
+          <div class="icon-wrapper">
+            <img src="./assets/icon-folder.316e86e2.svg" alt="icon-folder" />
+          </div>
+          <div class="icon-wrapper">
+            <img src="./assets/icon-upload.d7d6e61b.svg" alt="icon-upload" />
+          </div>
+        </div>
+      </div>
+      <div
+        class="relative bg-FmDarkBlue rounded-2xl p-5 px-8 pb-10 w-full font-normal md:max-w-md md:h-min self-end"
+      >
+        <p class="text-sm">
+          You’ve used <span class="font-bold">815 GB </span> of your storage
+        </p>
+        <div
+          class="bg-FmVeryDarkBlue h-5 rounded-full overflow-hidden p-1 mt-4"
+        >
+          <div
+            class="w-[81.5%] rounded-full bg-gradient-to-r from-FmfromGrad to-FmtoGrad h-full flex justify-end items-center px-[.1rem]"
+          >
+            <div class="rounded-full h-[.6rem] bg-white w-[.6rem]">&nbsp;</div>
+          </div>
+        </div>
+        <div class="text-xs flex justify-between py-2 font-bold">
+          <p>0 GB</p>
+          <p>1000 GB</p>
+        </div>
+        <div
+          class="bg-white text-FmGrayishBlue w-fit p-4 rounded-lg self-center text-xs font-bold uppercase flex justify-center items-center gap-2 absolute left-1/2 -translate-x-1/2 md:-right-12 md:left-auto md:-top-0 md:-translate-y-14"
+        >
+          <span class="font-bold text-4xl text-FmVeryDarkBlue">185 </span>GB
+          Left
+          <div
+            class="hidden md:block tringle absolute h-10 w-8 bg-white right-0 translate-y-1/2 bottom-0"
+          ></div>
+        </div>
+      </div>
+    </main>
+
+    <div class="absolute bottom-3 text-xs">
+      Challenge by
+      <a
+        class="text-FmGrayishBlue font-bold text-sm"
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a class="text-FmGrayishBlue font-bold text-sm" href="#"
+        >Chandraprakash Darji</a
+      >.
+    </div>
+  </body>
+</html>

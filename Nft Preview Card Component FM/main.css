@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .nft-unhover{
+        background-image: 
+          url(./assets/image-equilibrium.jpg);
+    }
+  .nft {
+    background-image: linear-gradient(
+        hsla(178, 100%, 50%, 0.2),
+        hsla(178, 100%, 50%, 0.2)
+      ),
+      url(./assets/image-equilibrium.jpg);
+  }
+}

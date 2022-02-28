@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="/script.js"></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+  <main></main>
+<div class="main">
+  <div class="content">
+    <div class="inner-content-div">
+      <div class="logo"> <img src="./images/logo.svg" alt="logo"></div>
+      <div class="model-girl">
+        <img class="model-g" src="./images/hero-mobile.jpg" alt="model-img">
+      </div>
+      <div class="headline"> 
+        <span class="we">
+          WE'RE<br>
+        </span>
+        <h1 class="coming">
+          COMING <br>SOON
+        </h1>
+      </div>
+      <div class="discription">    
+        Hello fellow shoppers! We're currently building our new fashion store. 
+        Add your email below to stay up-to-date with announcements and our launch deals.
+      </div>
+      <form name="form1" action="#"> 
+      <div class="input-mail"  id="input-div">
+        <div class="input">
+          <input class="mail-box" type="email" name="email" id="email" placeholder="Email Address">
+        </div>
+        <div class="error" id="error"><img src="./images/icon-error.svg" alt=""></div>
+        <div class="submit-btn" type="submit" onclick="ValidateEmail(document.form1.email)">
+          <img src="./images/icon-arrow.svg" alt="icon-arrow">
+        </div>
+      </div>
+      <div class="error-text" id="error-text">Please provide valid Email Address</div>
+      </form>
+    </div>
+  </div>
+  <div class="model-img-div">
+    <img class="model-img" src="./images/hero-desktop.jpg" alt="model-img">
+  </div>
+</div>
+   <footer>
+     <p class="attribution">
+       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+       Coded by <a href="https://github.com/Chandraprakash-Darji">Chandraprakash Darji</a>.
+      </p>
+    </footer>
+  
+</body>
+</html>

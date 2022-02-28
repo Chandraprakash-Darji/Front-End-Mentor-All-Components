@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .price-box {
+    grid-template-columns: max-content 1fr min-content;
+  }
+}
+@layer base {
+  body {
+    background-image: url(./assets/pattern-background-mobile.svg),
+      linear-gradient(hsla(228, 100%, 98%, 0.2), hsla(228, 100%, 98%, 0.2));
+
+    background-size: 100vw;
+    @apply bg-no-repeat;
+  }
+}
+@layer utilities {
+  .desktop {
+    background-image: url(./assets/pattern-background-desktop.svg),
+      linear-gradient(hsla(228, 100%, 98%, 0.2), hsla(228, 100%, 98%, 0.2));
+  }
+}

@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+html , body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: var(--Pale-blue);
+    font-family: 'Red Hat Display',sans-serif;
+}
+.main {
+    background-image: url("/images/pattern-background-desktop.svg"); 
+    background-repeat: repeat-x;
+    background-position-x: center;
+    background-size: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    width: 100%;
+    max-width: 23em;
+    border-radius: 1em;
+    background-color: var(--Very-pale-blue);
+    text-align: center;
+    --Bright-blued: hsla(245, 75%, 52% ,.1);
+    box-shadow: var(--Bright-blued) 1.5em 1.5em 1em -.5em;
+    margin: auto .5em;
+}
+.ill-hero {
+    border-radius: 1em 1em 0 0;
+    width: 100%;
+}
+.title h1 {
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 1em 0 .5em 0;
+}
+.discription {
+    color: var(--Desaturated-blue);
+    margin: .5em 0 1em 0;
+}
+.plan-div {
+    --Pale-blue: hsla(225, 100%, 94%, 0.45);
+    display: flex;
+    background-color: var(--Pale-blue);   
+    border-radius: .5em;
+    margin: 2em;
+}
+.plan-name-section {
+    margin: .8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.plan-name-section span {
+    font-weight: 900;
+    font-size: .9rem;
+    text-align: left;
+}
+.plan-price {
+    font-weight: 900;
+    color: var(--Desaturated-blue);
+    font-size: .7rem;
+    text-align: left;
+    margin-top: .4em;
+}
+.icon-div {
+    --Pale-blue: hsla(225, 100%, 92%, 1);
+    width: 2em;
+    height: 2em;
+    stroke: var(--Desaturated-blue);
+    margin: 1em 0 1em 1em;
+    background-color: var(--Pale-blue);
+    border-radius: 50%;
+    padding: .5em;
+}
+.change {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    color: var(--Bright-blue);
+    margin-right: .5em;    
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: .9rem;
+}
+.space {
+    width: 20%;
+}
+.payment {
+    font-weight: 900;
+    color: var(--Pale-blue);
+    background-color: var(--Bright-blue);
+    margin: auto 3em 2em;
+    padding: 1em 1.5em;
+    border-radius: 1em;
+    --Bright-blued: hsla(245, 75%, 52% ,.25);
+    box-shadow: var(--Bright-blued) 0em 1.5em 1em -.5em;
+    cursor: pointer;
+}
+.cancel {
+    font-weight: 900;
+    color: var(--Desaturated-blue);
+    margin-bottom: 3em;
+    cursor: pointer;
+}
+.payment:hover {
+    --Bright-blue: hsla(245, 75%, 52%, 0.75);
+    background-color: var(--Bright-blue);
+    color: white;
+}
+.change:hover {
+    text-decoration: none;
+    --Bright-blue: hsla(245, 75%, 52%, 0.75);
+    color: var(--Bright-blue);
+}
+.cancel:hover {
+    color: #000;
+}
+@media (min-width:270px)  {
+    /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+    html , body {
+       font-size: 12px;
+   }
+}
+@media (min-width:320px)  {
+    /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+    html , body {
+       font-size: 15px;
+   }
+}
+@media (min-width:481px){
+   /* smartphones, Android phones, landscape iPhone  */
+   html , body {
+       font-size: 16px;
+   }
+} 
+@media (min-width:641px)  {
+    /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+    html , body {
+       font-size: 21px;
+   }
+    }
+@media (min-width:961px)  { 
+   /* tablet, landscape iPad, lo-res laptops ands desktops */
+   html , body {
+       font-size: 22px;
+   }
+}
+@media (min-width:1025px) {
+   /* big landscape tablets, laptops, and desktops */
+   html , body {
+       font-size: 15px;
+   }
+}
+@media (min-width: 1920px) {
+   /* For Projectors or Higher Resolution Screens (Full HD) */
+       html , body {
+           font-size: 23px;
+       }
+   }
+@media (min-width: 2560px) {
+   /* For 4K Displays (Ultra HD) */
+       html , body {
+           font-size: 35px;
+       }
+   }
+

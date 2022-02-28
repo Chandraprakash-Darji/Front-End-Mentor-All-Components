@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Stats preview card component</title>
+
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body
+    class="bg-FmMaineBackground flex justify-center items-center h-screen text-FmWhiteMainHeadingStats relative"
+  >
+    <main
+      class="flex flex-col text-center max-w-xs sm:max-w-md bg-FmCardBackground rounded-lg overflow-hidden md:flex-row-reverse md:max-w-2xl lg:max-w-4xl md:max-h-80"
+    >
+      <figure class="bg-FmSoftVioletAccent md:w-1/2 overflow-hidden">
+        <img
+          src="./assets/image-header-mobile.jpg"
+          alt=""
+          class="md:hidden w-full h-full object-cover mix-blend-multiply opacity-80"
+        />
+        <img
+          src="./assets/image-header-desktop.jpg"
+          alt=""
+          class="hidden md:block w-full h-full object-cover mix-blend-multiply opacity-80"
+        />
+      </figure>
+      <div class="px-6 md:w-1/2 self-center">
+        <h1 class="text-2xl font-bold font-Inter pt-8">
+          Get <span class="text-FmSoftVioletAccent"> insights </span>that help
+          your business grow.
+        </h1>
+        <p
+          class="text-FmSlightlyMainParagraph py-5 text-sm tracking-wide break-words font-LexendDeca sm:mx-4"
+        >
+          Discover the benefits of data analytics and make better decisions
+          regarding revenue, customer experience, and overall efficiency.
+        </p>
+        <div
+          class="flex flex-col gap-4 pb-8 sm:flex-row justify-center sm:mt-2"
+        >
+          <h2 class="flex flex-col font-bold text-xl font-Inter">
+            10k+
+            <span
+              class="text-xs font-normal uppercase text-FmSlightlyStatHeadings font-LexendDeca"
+            >
+              companies</span
+            >
+          </h2>
+          <h2 class="flex flex-col font-bold text-xl font-Inter">
+            314
+            <span
+              class="text-xs font-normal uppercase text-FmSlightlyStatHeadings font-LexendDeca"
+            >
+              templates</span
+            >
+          </h2>
+          <h2 class="flex flex-col font-bold text-xl font-Inter">
+            12m+
+            <span
+              class="text-xs font-normal uppercase text-FmSlightlyStatHeadings font-LexendDeca"
+            >
+              queries</span
+            >
+          </h2>
+        </div>
+      </div>
+    </main>
+
+    <div class="absolute bottom-2 text-sm">
+      Challenge by
+      <a
+        class="font-bold text-FmSoftVioletAccent"
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        href="https://github.com/Chandraprakash-Darji"
+        class="font-bold text-FmSoftVioletAccent"
+        >Chandraprakash Darji</a
+      >.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,173 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body , html {
+    font-size: 18px;
+    font-family: 'Poppins' , sans-serif;
+    text-align: center; 
+    background-color: hsl(0, 0%, 98%);
+    
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    
+    --VeryDarkBlue: hsl(234, 12%, 34%);
+    --GrayishBlue: hsl(229, 6%, 66%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+}
+header {
+    max-width: 32%;
+    margin: 0 auto;
+    color: var(--VeryDarkBlue);
+}
+header .title {
+    font-size: 2rem;
+    font-weight: 200;
+    margin-top: 1.3em;
+}
+header .discription {
+    color: var(--GrayishBlue);
+    font-weight: 400;
+}
+.cards {
+    display: flex;
+    max-width: 75%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.card-middle {
+    width: 25em;
+    margin: 1em;
+}
+.card-right , 
+.card-left ,
+.m-2-card , 
+.m-1-card {
+    width: 25em;
+    height: 15em;
+    z-index: 2;
+    /* border: 3px green solid; */
+    margin: 1em;  
+    border-radius: .5em;
+    text-align: left;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    box-shadow:
+  0px 0.1px 1.2px rgba(103, 131, 226, 0.018),
+  0px 0.3px 2.7px rgba(103, 131, 226, 0.026),
+  0px 0.5px 4.6px rgba(103, 131, 226, 0.032),
+  0px 0.8px 6.9px rgba(103, 131, 226, 0.037),
+  0px 1.1px 10px rgba(103, 131, 226, 0.041),
+  0px 1.6px 14.2px rgba(103, 131, 226, 0.046),
+  0px 2.3px 20.1px rgba(103, 131, 226, 0.051),
+  0px 3.3px 29.2px rgba(103, 131, 226, 0.057),
+  0px 5.1px 45px rgba(103, 131, 226, 0.063),
+  0px 9px 80px rgba(103, 131, 226, 0.07);
+  
+}
+.m-2-card , 
+.m-1-card  {
+    width: 100%;
+    margin: 0 auto;
+}
+.m-2-card {
+    z-index: 3;
+    background-color: var(--VeryLightGray);
+}
+.m-1-card  {
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+.card-title {
+    font-weight: 600;
+    margin: .5em 0em 0 .5em;
+    font-size: 1.1rem;
+    color: var(--VeryDarkBlue);
+}
+.card-discription {
+    color: var(--GrayishBlue);
+    margin: .5em 0em 0 .5em;
+    font-weight: 400;
+    width: 80%;
+    font-size: .9rem;
+}
+.imgage {
+    text-align: right;
+    /* margin: 4em 1em 1em  0; */
+
+}
+.card-left {
+    border-top: 5px solid var(--Cyan);
+}
+.m-1-card {
+    border-top: 5px solid var(--Red);
+}
+.m-2-card {
+    border-top: 5px solid var(--Orange);
+}
+.card-right {
+    border-top: 5px solid var(--Blue);
+}
+
+@media only screen and (max-width:320px)  {
+    /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+    html , body {
+       font-size: 13px;
+       padding: .2em;
+   }
+}
+@media only screen and (max-width:481px){
+   /* smartphones, Android phones, landscape iPhone  */
+   html , body {
+       font-size: 11px;
+   }
+   .cards {
+       padding: 0 2em;
+   }
+} 
+@media only screen and (max-width:768px){
+    header {
+        max-width: 90%;
+    }
+    .cards {
+        display: flex;
+        max-width: 90%;
+        flex-direction: column;
+    }
+    .m-1-card {
+        margin-top: 0em;
+    }
+ }
+/* @media (min-width:1025px) {
+    /* big landscape tablets, laptops, and desktops 
+    html , body {
+        font-size: 13px;
+    }
+} */
+@media only screen and (max-width:1024px){  
+    body , html {
+        font-size: 18px;
+    }
+}
+/* 
+@media (min-width: 1920px) {
+    /* For Projectors or Higher Resolution Screens (Full HD) 
+    html , body {
+        font-size: 20px;
+        }
+}*/
+@media (min-width: 2560px) {
+     /* For 4K Displays (Ultra HD)  */
+    html , body {
+        font-size: 25px;
+    }
+} 

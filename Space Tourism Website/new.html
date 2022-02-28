@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Space tourism website</title>
+    <link rel="stylesheet" href="./style/main.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="bg-[url(./assets/home/background-home-mobile.jpg)] sm:bg-[url(./assets/home/background-home-tablet.jpg)] lg:bg-[url(./assets/home/background-home-desktop.jpg)] bg-no-repeat bg-cover min-h-screen text-fmAcent font-fmBarlow overflow-x-hidden flex flex-col"
+  >
+    <header
+      class="relative navBox h-28 lg:h-36 flex justify-between items-center pt-0 lg:pt-10 font-fmBarlowCondensed tracking-[.17em] text-2xl uppercase text-fmWhite"
+    >
+      <hr
+        class="hidden lg:block absolute w-[15rem] xl:w-[50vw] ml-44 z-10 opacity-30 bg-white"
+      />
+      <img
+        src="./assets/shared/logo.svg"
+        alt="Main Logo"
+        class="ml-10 w-12 h-12"
+      />
+      <img
+        src="./assets/shared/icon-hamburger.svg"
+        alt="menu btn"
+        class="hamburger"
+      />
+      <nav class="hidden sm:menu backdrop-blur-3xl">
+        <div class="navDesk navA activeNav">
+          <span class="hidden md:inline-block"> 00</span> Home
+        </div>
+        <div class="navDesk navA">
+          <span class="hidden md:inline-block"> 01</span> Destination
+        </div>
+        <div class="navDesk navA">
+          <span class="hidden md:inline-block"> 02</span> Crew
+        </div>
+        <div class="navDesk navA">
+          <span class="hidden md:inline-block"> 03</span> Technology
+        </div>
+      </nav>
+    </header>
+    <nav class="menuMobile">
+      <div class="navConatain">
+        <img
+          src="./assets/shared/icon-close.svg"
+          alt="menu btn"
+          class="closeNav"
+        />
+        <div class="navMob navA activeNav">Home</div>
+        <div class="navMob navA">Destination</div>
+        <div class="navMob navA">Crew</div>
+        <div class="navMob navA">Technology</div>
+      </div>
+    </nav>
+    <main
+      class=" max-w-[95rem] lg:m-auto flex-1 h-full text-center px-6 sm:mx-20 md:mx-32 lg:px-8 p-12 pb-[8.68rem] flex flex-col lg:flex-row lg:text-left lg:items-end gap-20 justify-between border-r-slate-900"
+    >
+      <section class="lg:w-2/5">
+        <h1
+          class="font-fmBarlowCondensed tracking-widest text-2xl sm:text-3xl uppercase grid"
+        >
+          So, you want to travel to
+          <span
+            class="text-8xl sm:text-[9.35rem] sm:mt-16 my-5 font-fmBellefair text-fmWhite"
+          >
+            space
+          </span>
+        </h1>
+        <p class="mb-auto text-lg text-fmAcent">
+          Let’s face it; if you want to go to space, you might as well genuinely
+          go to outer space and not hover kind of on the edge of it. Well sit
+          back, and relax because we’ll give you a truly out of this world
+          experience!
+        </p>
+      </section>
+      <button class="exploreBtn">Explore</button>
+    </main>
+    <main id="destina"
+      class="hide max-w-[95rem] m-auto text-center p-6 sm:px-16 md:px-20 flex flex-col items-center lg:flex-row lg:justify-between lg:px-5 lg:text-left lg:gap-16 lg:items-start lg:mt-32 xl:gap-56"
+    >
+      <section class="flex flex-col sm:items-start w-full lg:mx-0 relative">
+        <h2 class="h2-sectionTitle lg:absolute w-96 -top-14">
+          <span class="opacity-50 mr-2"> 01</span> Pick your destination
+        </h2>
+        <img
+          id="planetImg"
+          src="./assets/destination/image-moon.png"
+          alt="moon img"
+          class="w-60 h-60 md:w-72 md:h-72 lg:w-96 lg:h-96 xl:w-[29rem] xl:h-[29rem] my-5 md:my-10 mx-auto lg:mt-16"
+        />
+      </section>
+      <div
+        class="flex flex-col items-center justify-between lg:max-w-lg xl:max-w-xl"
+      >
+        <nav class="menu text-2xl mx-auto lg:mr-auto lg:ml-0 h-16 px-0">
+          <div class="navDesti navA activeNav text-fmAcent">Moon</div>
+          <div class="navDesti navA text-fmAcent">Mars</div>
+          <div class="navDesti navA text-fmAcent">Europa</div>
+          <div class="navDesti navA text-fmAcent">Titan</div>
+        </nav>
+        <h3 id="title" class="heading-3 pt-10 md:mt-13 w-full">Moon</h3>
+        <p id="description" class="text-xl pb-8 lg:pb-16 text-fmAcent">
+          See our planet as you’ve never seen it before. A perfect relaxing trip
+          away to help regain perspective and come back refreshed. While you’re
+          there, take in some history by visiting the Luna 2 and Apollo 11
+          landing sites.
+        </p>
+        <div
+          class="flex flex-col md:flex-row md:justify-between pt-8 border-t border-opacity-30 border-white gap-y-4 md:w-full px-32 lg:px-0 lg:pr-10 justify-between"
+        >
+          <p
+            class="flex flex-col uppercase text-lg gap-y-2 font-fmBarlowCondensed"
+          >
+            <span class="text-fmAcent tracking-widest"> Avg. distance</span>
+            <span id="avgDistance" class="text-3xl font-fmBellefair">
+              384,400 km
+            </span>
+          </p>
+          <p
+            class="flex flex-col uppercase text-lg gap-y-2 font-fmBarlowCondensed"
+          >
+            <span class="text-fmAcent tracking-widest"> Est. travel time</span>
+            <span id="avgTime" class="text-3xl font-fmBellefair"> 3 days </span>
+          </p>
+        </div>
+      </div>
+    </main>
+    <main id="crew"
+      class="hide h-full  max-w-[95rem] mx-auto text-center p-6 sm:pb-0 sm:px-16 md:px-20 flex flex-col lg:flex-row lg:justify-between lg:px-5 lg:text-left lg:gap-16 items-start lg:mt-32 xl:gap-56 flex-grow"
+    >
+      <section
+        class="flex flex-col mt-0 self-start sm:items-start w-full lg:mx-0 relative border-b sm:border-opacity-0 border-white border-opacity-30"
+      >
+        <h2 class="h2-sectionTitle lg:absolute my-10 w-96 -top-14">
+          <span class="opacity-50 mr-2"> 02</span> Meet your crew
+        </h2>
+        <img
+          src="./assets/crew/image-douglas-hurley.png"
+          alt="Crew Member pic"
+          class="m-auto w-auto h-72 mx-auto sm:hidden"
+          id="crewImg"
+        />
+      </section>
+      <div
+        class="flex flex-col items-center justify-between sm:flex-col-reverse lg:max-w-lg xl:max-w-xl "
+      >
+        <nav
+          class="menu items-center my-5 sm:my-0 text-2xl mx-auto lg:mr-auto lg:ml-0 h-8 px-0"
+        >
+          <div class="navCrew activeNavCrew text-fmAcent">&nbsp;</div>
+          <div class="navCrew text-fmAcent">&nbsp;</div>
+          <div class="navCrew text-fmAcent">&nbsp;</div>
+          <div class="navCrew text-fmAcent">&nbsp;</div>
+        </nav>
+        <div>
+          <h3 class="font-fmBellefair text-3xl flex flex-col uppercase">
+            <span id="CrewRole" class="text-base sm:text-2xl text-fmAcent">
+              Commander</span
+            >
+            <span id="CrewName" class="my-3 sm:text-5xl"> Douglas Hurley</span>
+          </h3>
+          <p id="crewBio" class="text-lg pb-8 lg:pb-16 text-fmAcent">
+            Douglas Gerald Hurley is an American engineer, former Marine Corps
+            pilot and former NASA astronaut. He launched into space for the
+            third time as commander of Crew Dragon Demo-2.
+          </p>
+        </div>
+      </div>
+      <img
+        src="./assets/crew/image-douglas-hurley.png"
+        alt="crew img"
+        class="crewImg mt-auto"
+      />
+    </main>
+    <script src="./new.js" type="module"></script>
+  </body>
+</html>

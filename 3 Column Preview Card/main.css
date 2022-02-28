@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .box {
+    @apply bg-FmBrightOrange text-FmTransparentWhiteParagraphs p-8 sm:p-10;
+  }
+  .box-head {
+    @apply font-FmBigShouldersDisplay text-3xl py-4 uppercase text-FmVeryLightGray;
+  }
+  .box-para {
+    @apply text-sm;
+  }
+  .btn {
+    @apply bg-FmVeryLightGray border-2 border-FmVeryLightGray text-FmBrightOrange px-5 py-2 mt-5 sm:text-lg rounded-full hover:bg-transparent hover:text-FmVeryLightGray transition-all duration-300 md:mt-24;
+  }
+}

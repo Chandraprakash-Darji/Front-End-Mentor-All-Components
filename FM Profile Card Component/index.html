@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Profile card component</title>
+
+    <link rel="stylesheet" href="./main.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body
+    class="flex flex-col justify-center items-center relative h-screen w-screen bg-FmDarkCyan overflow-hidden font-FmKumbhSans"
+  >
+    <img
+      src="./assets/bg-pattern-top.svg"
+      alt="top"
+      class="scale-125 absolute top-0 -translate-y-1/2 -translate-x-1/2 md:right-2/3 md:bottom-1/2 md:translate-x-0 transition-all duration-500"
+    />
+    <img
+      src="./assets/bg-pattern-bottom.svg"
+      alt="bottom"
+      class="scale-125 absolute bottom-0 left-0 translate-y-1/2 translate-x-1/2 md:left-2/3 md:translate-x-0 md:top-1/2 md:translate-y-0 transition-all duration-500"
+    />
+    <main class="bg-white max-w-sm rounded-xl overflow-hidden z-10 ">
+      <div class="relative">
+        <img src="./assets/bg-pattern-card.svg" alt="" />
+        <img
+          src="./assets/image-victor.jpg"
+          alt="profile"
+          class="rounded-full border-4 border-white absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2"
+        />
+      </div>
+      <section class="p-5 mt-11 text-center">
+        <div class="flex gap-3 justify-center pt-1">
+          <h1 class="font-bold text-FmVeryDarkBlue tracking-wide">
+            Victor Crest
+          </h1>
+          <p class="text-FmDarkGrayishBlue">26</p>
+        </div>
+        <p class="text-xs pt-1 text-FmDarkGray">London</p>
+        <hr class="bg-FmDarkGray my-5" />
+        <div class="flex justify-evenly">
+          <div class="">
+            <h2 class="font-bold text-FmVeryDarkBlue">80K</h2>
+            <p class="text-xs text-FmDarkGray font-bold tracking-wider">
+              Followers
+            </p>
+          </div>
+          <div class="">
+            <h2 class="font-bold text-FmVeryDarkBlue">803K</h2>
+            <p class="text-xs text-FmDarkGray font-bold tracking-wider">
+              Likes
+            </p>
+          </div>
+          <div class="">
+            <h2 class="font-bold text-FmVeryDarkBlue">1.4K</h2>
+            <p class="text-xs text-FmDarkGray font-bold tracking-wider">
+              Photos
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="absolute bottom-2 text-sm text-center">
+      Challenge by
+      <a
+        class="text-white font-bold tracking-wide"
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        class="text-white font-bold tracking-wide"
+        href="https://github.com/Chandraprakash-Darji"
+        >Chandraprakash-Darji</a
+      >.
+    </footer>
+  </body>
+</html>

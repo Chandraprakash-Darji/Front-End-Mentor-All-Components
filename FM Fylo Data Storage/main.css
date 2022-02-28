@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .icon-wrapper {
+    @apply bg-FmVeryDarkBlue h-10 w-10 rounded-lg flex justify-center items-center;
+  }
+  .tringle {
+    clip-path: polygon(0 50%, 100% 100%, 100% 0%);
+  }
+}

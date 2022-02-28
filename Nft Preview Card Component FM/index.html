@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body
+    class="h-screen relative bg-VeryMainBG flex flex-col justify-center items-center"
+  >
+    <main class="bg-VeryCardBG max-w-sm rounded-3xl p-6">
+      <div
+        class="nft-unhover hover:nft group relative rounded-3xl bg-cover h-[21rem] bg-center transition-all duration-300 cursor-pointer"
+      >
+        <img
+          src="./assets/icon-view.svg"
+          alt="eye"
+          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-all duration-200"
+        />
+      </div>
+      <h1
+        class="text-White hover:text-Cyan text-2xl font-semibold my-5 transition-all duration-300 cursor-pointer"
+      >
+        Equilibrium #3429
+      </h1>
+      <p class="text-SoftBlue text-lg">
+        Our Equilibrium collection promotes balance and calm.
+      </p>
+      <div class="flex justify-between font-semibold my-5">
+        <p class="text-Cyan flex gap-2 flex-auto items-center">
+          <img src="./assets/icon-ethereum.svg" alt="eth" class="h-6" /> 0.041
+          ETH
+        </p>
+        <p class="text-SoftBlue flex gap-2 flex-auto justify-end items-center">
+          <img src="./assets/icon-clock.svg" alt="clock" class="h-6" /> 3 days
+          left
+        </p>
+      </div>
+      <div class="border-t-2 border-VeryLine flex items-center gap-4 pt-6">
+        <img
+          src="./assets/image-avatar.png"
+          alt="profile avatar"
+          class="border-2 rounded-full h-10"
+        />
+        <p class="text-SoftBlue">
+          Creation of
+          <span
+            class="text-White hover:text-Cyan transition-all duration-300 cursor-pointer"
+            >Jules Wyvern
+          </span>
+        </p>
+      </div>
+    </main>
+
+    <div class="text-White absolute bottom-2 text-sm">
+      Challenge by
+      <a
+        class="text-SoftBlue font-semibold hover:text-Cyan transition-all duration-300 cursor-pointer"
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        class="text-SoftBlue font-semibold hover:text-Cyan transition-all duration-300 cursor-pointer"
+        href="https://github.com/Chandraprakash-Darji"
+        >ChandraPrakassh Darji</a
+      >.
+    </div>
+  </body>
+</html>
