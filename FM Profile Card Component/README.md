@@ -13,8 +13,8 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
-<!-- - Solution URL: [here](https://www.frontendmentor.io/solutions/responsive-order-summary-layout-by-tailwind-css-hYjKq-PU0)
-- Live Site URL: [here](https://fm-profile-card-componenet.netlify.app/) -->
+- Solution URL: [here](https://github.com/Chandraprakash-Darji/Front-End-Mentor-All-Components/tree/master/FM%20Profile%20Card%20Component)
+- Live Site URL: [here](https://fm-profile-card-componenet.netlify.app/) 
 
 ### Built with
 
